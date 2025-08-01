@@ -1,0 +1,158 @@
+#navList{
+    width: 100%;
+    padding: 15px; 
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    list-style: none;
+    font-size: 2.8rem;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: none;
+    background-color: #dfe4ef;
+    background-image: linear-gradient(98deg, #dfe4ef 0%, #ffffff 100%);
+   flex-wrap: wrap;
+}
+nav{
+    width: 100%;
+}
+.navContainer{
+    min-height:80px;
+    width: 100vw;
+    /* background-color:  rgba(218, 115, 238, 0.671); */
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #294555 0%, #80D0C7 100%);
+    
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-x: none;
+}
+#dhabaName{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+}
+a{
+    text-decoration: none;    /*underline htane k lie */
+    color: aliceblue;
+}
+#navItems{
+    gap: 30px;
+    display: flex;
+}
+.footerBox{
+    display: flex;
+    align-self: end;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #184863 0%, #80D0C7 100%);
+    width: 100%;
+    text-align: center;
+    min-height: 40px;
+    justify-content: center;
+    align-items: end;
+} 
+.footerBox p{
+    color: aliceblue;
+    font-size: 2rem;
+}  
+
+.contentBox{
+    /* border: 1px solid black; */
+    background-color:azure;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+   box-shadow:0px 0px 40px black;
+   border-radius: 20px;
+}
+
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.7rem;
+}
+h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.rightBox{
+    position:relative;
+    overflow: hidden;
+    height: 380px;
+    border-radius: 20px;
+    transition: all 0.5s linear 0s;   /*isse (transform) m transition aaega*/
+    box-shadow: 2px 1 px 10px black;
+}
+
+.item{
+    margin: 30px; 
+    padding: 30px;
+    /* width: 40vw; */
+    border: 1px solid grey;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+ 
+.rightBox img{ 
+    position: relative;
+    width: 100%;
+    /* padding-right: 6px; */
+    height: 380px;    
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+  
+.ingdBox{
+    /* font-size: 1rem; */
+}
+.recpBox{
+    /* font-size: 1.1re; */
+}
+
+.rightBox:hover{
+    transform: scale(1.1) ;
+}
+
+.rightBox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 100%;
+    width: 100%;
+    
+    background-color: rgba(89, 81, 81, 0.834);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    opacity: 0;        /*opacity:0 matlab abhi overlay nhi dikhega*/
+    transition: all 0.3s linear 0s;
+}
+.rightBox:hover .overlay{
+    opacity: 1;     /*jb hover krenge image pr tb overlay dikhega*/
+}
+
+.rightBox .overlay span{
+    font-size: 1.8rem;
+    color: white;
+}
